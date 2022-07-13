@@ -1,0 +1,5 @@
+%trying to redefine a macro
+\def{MACRO}{The result is #}
+\MACRO{a processed document.}
+\def{MACRO}{The result is #}
+\MACRO{a processed document.}

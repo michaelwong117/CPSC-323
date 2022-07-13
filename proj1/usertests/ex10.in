@@ -1,0 +1,4 @@
+%undef example
+\def{MACRO}{The result is #}
+\MACRO{a processed document.}
+\undef{MACRO}

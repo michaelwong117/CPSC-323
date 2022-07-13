@@ -1,0 +1,19 @@
+testcg: clean 323compiler
+	@for i in $(shell ls ${TESTCASES}); do \
+		./323compiler ${TESTCASES}/$${i} > dummy.ir; \
+		gcc ${TESTASSEMBLY}/main.c assembly.s -o test; \
+		./test > test.cg; \
+		gcc -S ${TESTCASES}/$${i} -o temp.s; \
+		gcc ${TESTASSEMBLY}/main.c temp.s -o gold; \
+		./gold > gold.cg; \
+		cmp -s test.cg gold.cg; \
+		RETVALCG=$$?; \
+		if [ $$RETVALCG -eq 0 ]; then\
+			echo $${i} "CODEGEN PASS"; \
+		else \
+			echo $${i} "CODEGEN FAIL"; \
+		fi \
+	done;	
+	@rm dummy.ir
+	@rm gold.cg
+	@rm test.cg

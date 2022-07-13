@@ -1,0 +1,6 @@
+%another level of recursion with imbalanced braces falling back from expandedValue
+\def{testMacro}{some text #}
+\def{macroFragment}{goes #}
+\def{macroEnd}{in the output #}
+
+\testMacro{\macroFragment}{{\macroEnd}

@@ -1,0 +1,5 @@
+\def{disease}{beri\\}
+\def{SUB}{HELPME}
+\def{MACRO}{SUB{}}
+
+\disease{}

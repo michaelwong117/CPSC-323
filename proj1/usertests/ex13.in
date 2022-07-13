@@ -1,0 +1,9 @@
+%trying to define and undefine a bunch of macros
+\def{MACRO1}{The result is #}
+\MACRO1{a processed document.}
+\def{MACRO2}{# $ #}
+\MACRO2{a processed document.}
+\undef{MACRO1}
+\MACRO2{Hello}
+\def{MACRO1}{The new result is #}
+\MACRO1{a processed document.}

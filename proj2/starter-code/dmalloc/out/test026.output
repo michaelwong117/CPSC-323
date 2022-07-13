@@ -1,0 +1,2 @@
+About to free 0x1b22fd0
+MEMORY BUG: detected wild write during free of pointer 0x1b22fd0

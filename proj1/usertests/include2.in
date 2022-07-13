@@ -1,0 +1,2 @@
+\def{B}{bees!}
+\expandafter{\include{usertests\include1a.in}e1b.in}{\def{A}{amazing #}}

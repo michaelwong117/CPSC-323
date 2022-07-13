@@ -1,0 +1,5 @@
+%reusing undefined macro example for undef
+\def{MACRO}{The result is #}
+\MACRO{a processed document.}
+\undef{MACRO}
+\MACRO{a processed document.}

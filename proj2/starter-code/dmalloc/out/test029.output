@@ -1,0 +1,2 @@
+EXPECTED LEAK: 0x93c840 with size 8
+LEAK CHECK: test0xx.cc:16: allocated object 0x93c840 with size 8

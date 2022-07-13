@@ -1,0 +1,18 @@
+#!/bin/bash
+#   Exist [FILE]*
+# Die if any of the files specified exist
+
+EXIST=
+
+for file in $* ; do
+  if [[ -e $file ]] ; then
+    EXIST="$EXIST $file"
+  fi
+done
+
+if [[ -n "$EXIST" ]] ; then
+  echo "Following files exist:$EXIST"
+  exit 0
+fi
+
+exit 1

@@ -1,0 +1,2 @@
+%you can't have a \ appear in the middle of the \aard while it's reading macro, err
+\def{aardvark}{anteater}\def{wolf}{vark}\expandafter{\aard}{\\\wolf{}}{}

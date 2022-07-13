@@ -1,0 +1,2 @@
+%why you can't tick twice
+\def{wolf}{vark}\expandafter{hello}{\\wolf{}}{}

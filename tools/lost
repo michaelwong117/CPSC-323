@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#    lost COMMAND
+#
+# Use valgrind to determine whether COMMAND lost memory on exit.
+# Prints amounts lost only if nonzero.
+
+LOG=LOST.LOG.$$
+
+# Delete all files created when exiting
+trap "/bin/rm -rf $LOG" 0 1 2 3 9 15
+
+# Ensure that log file does not already exist
+/c/cs323/bin/Exist $LOG && trap "" 0 && exit 0
+
+/usr/bin/valgrind --log-file=$LOG --leak-check=summary $* >& /dev/null
+
+/usr/bin/grep 'lost: [1-9]' $LOG | /usr/bin/perl -p -e 's{==\d+==\s*}{}'

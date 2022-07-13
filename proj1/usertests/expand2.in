@@ -1,0 +1,3 @@
+%nested expandafter
+\def{aardvark}{anteater}\def{wolf}{va}\def{cub}{rk}
+\expandafter{\aard}{\expandafter{\wolf{}}{\cub{}}}{}

@@ -1,0 +1,4 @@
+\def{aloha}{HELLO #}
+\aloha{
+
+            }

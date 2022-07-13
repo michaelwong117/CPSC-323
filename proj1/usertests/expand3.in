@@ -1,0 +1,4 @@
+%nested expandafter
+\def{aardvark}{anteater}\def{elephant}{vark}\def{wolf}{le}\def{cub}{phant}
+\expandafter{\aard}{\expandafter{\e}{\expandafter{\wolf{}}{\cub{}}}{}}{}
+\expandafter{\e}{\expandafter{\wolf{}}{\cub{}}}{}

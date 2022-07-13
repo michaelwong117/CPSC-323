@@ -1,0 +1,4 @@
+\def{A}{aardvark}
+\ifdef{A}{Output this text.}{Do not output this text.}
+\undef{A}
+\ifdef{A}{Do not output this text.}{Output this text.}

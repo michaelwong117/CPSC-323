@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+#   tester BASE SUFFIX
+#
+# Run all tests in directory BASE for which the expected output ends in .SUFFIX
+#
+# Example:
+#
+#   % tester /c/cs323/Hwk4/Tests t
+#
+# will run every executable file in the directory /c/cs323/Hwk1/Tests for which
+# there is a corresponding file with suffix .t.  That is, if BAD is such an
+# executable file and there is a file named BAD.t, then tester will execute
+# BAD, capturing the standard output and standard error, and run diff on
+# the captured output/error and BAD.t.
+
+BASE=$1                 # Where to find test scripts & expected output
+SUFFIX=$2               # Suffix for files containing expected output
+OUTPUT="tester-$$"      # Where to redirect output from test script
+
+trap "/bin/rm -f $OUTPUT; exit" 0 1 2 3 9 15
+
+for file in `ls $BASE`
+do
+   script=`basename $file .$SUFFIX`             # FILE is expected output of
+   if (test "$script.$SUFFIX" == $file &&       # some individual test script?
+       test -x $BASE/$script) then
+      echo -e "\nRunning $BASE/$script:"
+      $BASE/$script >& $OUTPUT                  #   Run script
+      diff $OUTPUT $BASE/$file &&               #   Check for differences
+	 echo "No differences found"
+   fi
+done

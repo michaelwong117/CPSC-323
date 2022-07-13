@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+#
+#     myls [directory]*
+#
+#  List files in the specified directories that belong to me.
+
+$me = `whoami`;
+@file = `/bin/ls -lA @ARGV | grep $me`;
+
+for (@file) {
+   @fields = split;
+   $file = pop(@fields);
+   print "$file\n"
+      unless ($file =~ m{^.nfs}) or ($file =~ m{vgdb-pipe-.*}) or ($file =~ m{diff\.\d*}) or ($file =~ m{TEST\.proj.*});
+}

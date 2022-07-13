@@ -1,0 +1,4 @@
+%opposite to the expandafter case, where you CAN have
+%an unfinished macro that goes into another thing
+\def{aardvark}{anteater}\def{wolf}{vark}
+\aard\wolf{}{}

@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+#
+#    Head [-h HEIGHT] [-w WIDTH] [-c] [file]*
+#
+# Copy up to HEIGHT lines (default 16) from files specified (or stdin if none)
+# to stdout, truncating lines at WIDTH characters (default 160) and appending
+# newlines as needed.  With the -color option, write lines beginning with <
+# in green, lines beginning with > in red, and the remaining lines in blue.
+
+use Term::ANSIColor;
+
+$height = 16;
+$height = $ENV{"HEAD_HEIGHT"}
+   if (exists $ENV{"HEAD_HEIGHT"});
+
+$width = 160;
+$height = $ENV{"HEAD_WIDTH"}
+   if (exists $ENV{"HEAD_WIDTH"});
+
+$color = "";
+
+while (@ARGV) {
+   if ($ARGV[0] eq "-h") {
+       $height = $ARGV[1];
+       shift; shift;
+   } elsif ($ARGV[0] eq "-w") {
+       $width = $ARGV[1];
+       shift; shift;
+   } elsif ($ARGV[0] eq "-c") {
+       $color = $ARGV[0];
+       shift;
+   } else {
+       last;
+   }
+}
+
+for ($i = 0; $i < $height && ($line = <>); $i++) {
+   chomp ($line);
+   $line = substr ($line, 0, $width);
+   if ($color eq "") {
+      print "$line\n";
+   } elsif ($line =~ m{^<}) {
+      print colored ($line, "red")   . "\n";
+   } elsif ($line =~ m{^>}) {
+      print colored ($line, "green") . "\n";
+   } else {
+      print colored ($line, "cyan")  . "\n";
+   }
+}

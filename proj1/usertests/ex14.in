@@ -1,0 +1,40 @@
+%trying to define and undefine many macros
+\def{MACRO1}{}
+\def{MACRO2}{b}
+\def{MACRO3}{c}
+\def{MACRO4}{d}
+\def{MACRO5}{e}
+\def{MACRO6}{f}
+\def{MACRO7}{g}
+\def{MACRO8}{h}
+\def{MACRO9}{i}
+\def{MACRO10}{j}
+\def{MACRO11}{k}
+\def{MACRO12}{l}
+\def{MACRO13}{m}
+\def{MACRO14}{n}
+\def{MACRO15}{o}
+\def{MACRO16}{p}
+\MACRO1{a processed document.}
+\MACRO2{a processed document.}
+\MACRO3{a processed document.}
+\MACRO4{a processed document.}
+\MACRO5{a processed document.}
+\MACRO6{a processed document.}
+\MACRO7{a processed document.}
+\MACRO8{a processed document.}
+\MACRO9{a processed document.}
+\MACRO10{a processed document.}
+\undef{MACRO10}
+\MACRO11{a processed document.}
+\MACRO12{a processed document.}
+\undef{MACRO2}
+\undef{MACRO8}
+\MACRO13{a processed document.}
+\MACRO14{a processed document.}
+\def{MACRO2}{# #}
+\MACRO15{a processed document.}
+\MACRO16{a processed document.}
+\def{MACRO10}{# # # # #}
+\MACRO10{hi}
+\MACRO2{working?}

@@ -1,0 +1,6 @@
+%unlimited backslashes
+\\\\\\\\\\\\
+\\\\\%hello
+\\\\\\%hello
+\def{A}{#} \def{B}{\\\\#} \def{C}{\\\#} 
+\A{alpha} \B{beta} \C{gamma}

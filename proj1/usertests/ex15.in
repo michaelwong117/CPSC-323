@@ -1,0 +1,7 @@
+%except for expandafter, expand macros in order
+%thus, in this case, return error because \macroFragment has no arg
+\def{testMacro}{some text #}
+\def{macroFragment}{goes #}
+\def{fragment2}{{here}}
+
+\testMacro{\macroFragment}\fragment2{}

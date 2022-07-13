@@ -1,0 +1,47 @@
+#!/usr/bin/perl
+#
+#      checkmake [-noprint] [DIRECTORY]
+#
+#  Check for the existence of a makefile in DIRECTORY (default = .) and print
+#  the contents of all files with names of the form [Mm]akefile* (unless the
+#  noprint option is specified).
+
+if (@ARGV > 0 && $ARGV[0] eq "-noprint") {      # Process command-line arguments
+   $noprint = shift @ARGV;
+}
+
+$MAKEFILES = "[Mm]akefile";                     # Name(s) of makefile(s)
+$MAKEFILES = (shift @ARGV) . "/$MAKEFILES"
+   if (@ARGV == 1);
+$CORRECTED = "Makefile.CORRECTED";              # Name of corrected makefile
+
+(@ARGV == 0)
+   || die ("Usage: checkmake [-noprint] [DIRECTORY]\n");
+
+$| = 1;                                         # Force immediate write
+print "\n***** Checking makefile *****\n";
+
+@exist = `/bin/ls $MAKEFILES 2>/dev/null`;      # Find all makefiles
+chomp (@exist);
+if (@exist == 0) {
+   print "checkmake: no makefile\n";
+   exit;
+} elsif (@exist > 1) {
+   print "checkmake: multiple makefiles: @exist\n";
+}
+
+exit                                            # Suppress printing makefiles?
+   if ($noprint);
+
+foreach $file (@exist) {
+   chomp ($file);
+   open (MAKE, "< $file");
+   print "\n==> $file <==\n";
+   while (<MAKE>) {
+      chomp;
+      next                                      #  Suppress blank/comment lines
+	 if (m{^\s*$} || m{^\s*#});
+      print "$_\n";
+   }
+   close (MAKE);
+}

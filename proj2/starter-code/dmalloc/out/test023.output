@@ -1,0 +1,3 @@
+Bad pointer 0x67e7df
+MEMORY BUG: test023.cc:10: invalid free of pointer 0x67e7df, not allocated
+  test0xx.cc:8: 0x67e7df is 127 bytes inside a 2001 byte region allocated here

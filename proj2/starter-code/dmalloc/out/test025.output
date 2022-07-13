@@ -1,0 +1,2 @@
+Will free 0xed0fb0
+MEMORY BUG: detected wild write during free of pointer 0xed0fb0

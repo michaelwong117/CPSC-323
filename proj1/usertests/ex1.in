@@ -1,0 +1,3 @@
+Hi!
+\def{MACRO}{The result is #}
+\MACRO{a processed document.}

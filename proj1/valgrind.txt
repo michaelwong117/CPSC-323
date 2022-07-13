@@ -1,0 +1,750 @@
+###########################################################################################
+######################################################################################################
+######################################################################################################
+######################################################################################################
+                        STARTING VALGRIND TESTING            
+######################################################################################################
+######################################################################################################
+######################################################################################################
+
+Test Case /home/accts/mjw223/cs323/proj1/usertests/12.in
+  
+PROJ1 OUTPUT-----------------------------------------
+Test file that contains no macro instructions and no comments, although it
+does contain some numbers (i.e., 1, 2, 3, etc.), punctuation (e.g., !, ?,
+;, etc.), and special symbols (e.g., {, #, and }).
+VALGRIND OUTPUT---------------------------------------
+Test file that contains no macro instructions and no comments, although it
+does contain some numbers (i.e., 1, 2, 3, etc.), punctuation (e.g., !, ?,
+;, etc.), and special symbols (e.g., {, #, and }).
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/blankdef.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/blankifdef.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/blankmacro.in
+  
+PROJ1 OUTPUT-----------------------------------------
+{}{}
+VALGRIND OUTPUT---------------------------------------
+{}{}
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/blankundef.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/braces1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/braces2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+
+
+beri\
+VALGRIND OUTPUT---------------------------------------
+
+
+
+
+beri\
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/comment1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+%
+adfjasfj 
+%
+deleting comments!
+VALGRIND OUTPUT---------------------------------------
+%
+adfjasfj 
+%
+deleting comments!
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/comment2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+asdf    
+
+%
+VALGRIND OUTPUT---------------------------------------
+
+asdf    
+
+%
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/comment3.in
+  
+PROJ1 OUTPUT-----------------------------------------
+Did you read the final specification?
+VALGRIND OUTPUT---------------------------------------
+Did you read the final specification?
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/def1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+The result is a processed document.
+VALGRIND OUTPUT---------------------------------------
+
+The result is a processed document.
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/endingescape.in
+  
+PROJ1 OUTPUT-----------------------------------------
+\VALGRIND OUTPUT---------------------------------------
+\-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/escapes.in
+  
+PROJ1 OUTPUT-----------------------------------------
+\\
+VALGRIND OUTPUT---------------------------------------
+\\
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex10.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+The result is a processed document.
+
+VALGRIND OUTPUT---------------------------------------
+
+The result is a processed document.
+
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex11.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex12.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex13.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+The result is a processed document.
+
+a processed document. $ a processed document.
+
+Hello $ Hello
+
+The new result is a processed document.
+VALGRIND OUTPUT---------------------------------------
+
+The result is a processed document.
+
+a processed document. $ a processed document.
+
+Hello $ Hello
+
+The new result is a processed document.
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex14.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b
+c
+d
+e
+f
+g
+h
+i
+j
+
+k
+l
+
+
+m
+n
+
+o
+p
+
+hi hi hi hi hi
+working? working?
+VALGRIND OUTPUT---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b
+c
+d
+e
+f
+g
+h
+i
+j
+
+k
+l
+
+
+m
+n
+
+o
+p
+
+hi hi hi hi hi
+working? working?
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex15.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex16.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex17.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+
+
+some text goes in the output string
+VALGRIND OUTPUT---------------------------------------
+
+
+
+
+some text goes in the output string
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex18.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex19.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+Hi!
+
+The result is a processed document.
+VALGRIND OUTPUT---------------------------------------
+Hi!
+
+The result is a processed document.
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex20.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+To escape a \\ precede it by a backslash
+To escape a {\ precede it by a backslash
+To escape a }\ precede it by a backslash
+To escape a \ \ precede it by a backslash
+VALGRIND OUTPUT---------------------------------------
+
+To escape a \\ precede it by a backslash
+To escape a {\ precede it by a backslash
+To escape a }\ precede it by a backslash
+To escape a \ \ precede it by a backslash
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex21.in
+  
+PROJ1 OUTPUT-----------------------------------------
+To escape a \ precede it by a backslash
+VALGRIND OUTPUT---------------------------------------
+To escape a \ precede it by a backslash
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex22.in
+  
+PROJ1 OUTPUT-----------------------------------------
+\\\\\\
+\\%hello
+\\\   
+alpha \\beta \#VALGRIND OUTPUT---------------------------------------
+\\\\\\
+\\%hello
+\\\   
+alpha \\beta \#-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex23.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex24.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+anteater
+VALGRIND OUTPUT---------------------------------------
+
+anteater
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex25.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex26.in
+  
+PROJ1 OUTPUT-----------------------------------------
+hellovark{}
+VALGRIND OUTPUT---------------------------------------
+hellovark{}
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+%def{prefix}{1}
+VALGRIND OUTPUT---------------------------------------
+%def{prefix}{1}
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex3.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+1
+VALGRIND OUTPUT---------------------------------------
+
+1
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex4.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+1
+VALGRIND OUTPUT---------------------------------------
+
+1
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex5.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+
+some text goes here
+VALGRIND OUTPUT---------------------------------------
+
+
+
+some text goes here
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex6.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+
+cbaabc doneVALGRIND OUTPUT---------------------------------------
+
+
+
+cbaabc done-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex7.in
+  
+PROJ1 OUTPUT-----------------------------------------
+A list of values:
+
+this arg {{ is }} balanced 1
+this arg {{ is }} balanced 2
+this arg {{ is }} balanced 3
+this arg {{ is }} balanced 4
+this arg {{ is }} balanced 5
+this arg {{ is }} balanced 6
+this arg {{ is }} balanced 7
+VALGRIND OUTPUT---------------------------------------
+A list of values:
+
+this arg {{ is }} balanced 1
+this arg {{ is }} balanced 2
+this arg {{ is }} balanced 3
+this arg {{ is }} balanced 4
+this arg {{ is }} balanced 5
+this arg {{ is }} balanced 6
+this arg {{ is }} balanced 7
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex8.in
+  
+PROJ1 OUTPUT-----------------------------------------
+\
+\VALGRIND OUTPUT---------------------------------------
+\
+\-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/ex9.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/expand1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+bison
+VALGRIND OUTPUT---------------------------------------
+
+bison
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/expand2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+anteater
+VALGRIND OUTPUT---------------------------------------
+
+anteater
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/expand3.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+anteater
+vark
+VALGRIND OUTPUT---------------------------------------
+
+anteater
+vark
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/if1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+ELSE
+THEN
+THEN VALGRIND OUTPUT---------------------------------------
+ELSE
+THEN
+THEN -------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/if2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+alpha, beta, gamma, ..., omega
+VALGRIND OUTPUT---------------------------------------
+alpha, beta, gamma, ..., omega
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/if3.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+NOTEMPTY
+VALGRIND OUTPUT---------------------------------------
+
+NOTEMPTY
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/include1a.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/include1b.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/include1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/include2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/latex.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+
+2
+im here
+VALGRIND OUTPUT---------------------------------------
+
+
+2
+im here
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/macro1.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/missingval2.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/missingval3.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/missingval4.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/missingvals.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t10.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+aardvark != anteaterVALGRIND OUTPUT---------------------------------------
+
+aardvark != anteater-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t11.in
+  
+PROJ1 OUTPUT-----------------------------------------
+ 
+  aardvark != anteaterVALGRIND OUTPUT---------------------------------------
+ 
+  aardvark != anteater-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t14.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+To escape a \ precede it by a backslash
+To escape a { precede it by a backslash
+To escape a } precede it by a backslash
+VALGRIND OUTPUT---------------------------------------
+
+To escape a \ precede it by a backslash
+To escape a { precede it by a backslash
+To escape a } precede it by a backslash
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t29.in
+  
+PROJ1 OUTPUT-----------------------------------------
+anteaterVALGRIND OUTPUT---------------------------------------
+anteater-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t39.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t46.in
+  
+PROJ1 OUTPUT-----------------------------------------
+  
+alpha # \gammaVALGRIND OUTPUT---------------------------------------
+  
+alpha # \gamma-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t5.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t6.in
+  
+PROJ1 OUTPUT-----------------------------------------
+VALGRIND OUTPUT---------------------------------------
+-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/t9.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+Output this text.
+
+Output this text.VALGRIND OUTPUT---------------------------------------
+
+Output this text.
+
+Output this text.-------------------------------------------------------
+
+  
+Test Case /home/accts/mjw223/cs323/proj1/usertests/weirdef.in
+  
+PROJ1 OUTPUT-----------------------------------------
+
+HELLO 
+
+            
+VALGRIND OUTPUT---------------------------------------
+
+HELLO 
+
+            
+-------------------------------------------------------
+
+  
